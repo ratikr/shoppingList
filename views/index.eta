@@ -1,0 +1,15 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Shared shopping lists</h1>
+
+<% if (it.listsCount.count > 0) { %>
+ <ul>
+<li>Shopping lists: <%= it.listsCount.count %></li>
+<li>Shopping list items: <%= it.itemsCount.count %></li>
+</ul>
+<% } else { %>
+No shopping lists yet.
+<br>
+<% } %>
+
+<a href="/lists">Lists</a>
